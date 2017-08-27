@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 """
 # Purpose: Move root users to an Org Unit based on their work address countryCode
+# Note: This script requires advanced GAM: https://github.com/taers232c/GAMADV-X
 # Usage:
 # 1: Get primaryEmail, orgUnitPath, addresses for all root users
 #  $ gam redirect csv ./UserAddresses.csv org "/" print users fields primaryemail,orgunitpath,addresses

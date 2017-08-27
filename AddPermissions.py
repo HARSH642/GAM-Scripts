@@ -6,7 +6,7 @@
 # 1: Use print filelist to get selected ACLS
 #    Syntax, advanced GAM: gam <UserTypeEntity> print filelist [anyowner|(showownedby any|me|others)]
 #				[query <QueryDriveFile>] [fullquery <QueryDriveFile>] [select <DriveFileEntity>|orphans] [depth <Number>]
-#  $ gam user testuser@domain.com print filelist id > filelist.csv
+#  $ gam redirect csv ./filelist.csv user testuser@domain.com print filelist id
 # 2: From that list of files, output a CSV file with headers "Owner,driveFileId,permissions"
 #    that lists the driveFileIds and permissions to be added
 #  $ AddPermissions.py filelist.csv addperms.csv '<DriveFilePermissionsList>'

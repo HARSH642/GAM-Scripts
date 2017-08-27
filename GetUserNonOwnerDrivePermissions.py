@@ -6,7 +6,7 @@
 # 1: Use print filelist to get selected ACLS
 #    Syntax, advanced GAM: gam <UserTypeEntity> print filelist [anyowner|(showownedby any|me|others)]
 #				[query <QueryDriveFile>] [fullquery <QueryDriveFile>] [select <DriveFileEntity>|orphans] [depth <Number>]
-#    Example, advanced GAM: gam redirect csv filelistperms.csv user testuser@domain.com print filelist id permissions
+#    Example, advanced GAM: gam redirect csv ./filelistperms.csv user testuser@domain.com print filelist id permissions
 # 2: From that list of ACLs, output a CSV file with headers "Owner,driveFileId,permissionIds"
 #    that lists the driveFileIds and permissionIds for all ACls except those indicating the user as owner
 #  $ python GetUserNonOwnerDrivePermissions.py filelistperms.csv deleteperms.csv

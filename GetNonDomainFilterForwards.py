@@ -5,7 +5,7 @@
 # Usage:
 # 1: Get filters, if you don't want all users, replace all users with your user selection in the command below
 #  $ Example, basic GAM: gam all users print filters > filters.csv
-#  $ Example, advanced GAM: gam config auto_batch_min 1 redirect csv filters.csv multiprocess all users print filters
+#  $ Example, advanced GAM: gam config auto_batch_min 1 redirect csv ./filters.csv multiprocess all users print filters
 # 2: From that list of filters, output a CSV file that lists the filters that forward email outside of the specified domains.
 #  $ python GetNonDomainFilterForwards.py filters.csv outsidefilters.csv
 # 3: Inspect outsidefilters.csv, verify that it makes sense and then proceed

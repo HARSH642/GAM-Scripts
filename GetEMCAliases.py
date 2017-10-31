@@ -17,7 +17,9 @@ if (len(sys.argv) > 2) and (sys.argv[2] != '-'):
   outputFile = open(sys.argv[2], 'wb')
 else:
   outputFile = sys.stdout
-outputFile.write('User,Alias\n')
+outputCSV = csv.DictWriter(outputFile, ['User', 'Alias'], lineterminator='\n')
+outputCSV.writeheader()
+
 if (len(sys.argv) > 1) and (sys.argv[1] != '-'):
   inputFile = open(sys.argv[1], 'rb')
 else:
@@ -25,8 +27,8 @@ else:
 
 for row in csv.DictReader(inputFile):
   for alias in row['EmailAddresses'].split():
-    outputFile.write('{0},{1}\n'.format(row['PrimarySmtpAddress'],
-                                        alias))
+    outputCSV.writerow({'User': row['PrimarySmtpAddress'],
+                        'Alias': alias})
 
 if inputFile != sys.stdin:
   inputFile.close()

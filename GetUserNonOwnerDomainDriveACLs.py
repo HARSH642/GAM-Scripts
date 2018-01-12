@@ -18,7 +18,7 @@ import sys
 
 id_n_address = re.compile(r"permissions.(\d+).id")
 # Substitute your domain(s) in the list below, e.g., domainList = ['domain.com',] domainList = ['domain1.com', 'domain2.com',]
-domainList = []
+domainList = ['domain.com',]
 
 if (len(sys.argv) > 2) and (sys.argv[2] != '-'):
   outputFile = open(sys.argv[2], 'wb')
@@ -28,7 +28,7 @@ outputCSV = csv.DictWriter(outputFile, ['Owner', 'driveFileId', 'driveFileTitle'
 outputCSV.writeheader()
 
 if (len(sys.argv) > 1) and (sys.argv[1] != '-'):
-  inputFile = open(sys.argv[1], 'rb')
+  inputFile = open(sys.argv[1], 'rbU')
 else:
   inputFile = sys.stdin
 

@@ -58,7 +58,7 @@ outputCSV = csv.DictWriter(outputFile, ['Owner', 'driveFileId', 'permissions'], 
 outputCSV.writeheader()
 
 if (len(sys.argv) > 1) and (sys.argv[1] != '-'):
-  inputFile = open(sys.argv[1], 'rb')
+  inputFile = open(sys.argv[1], 'rbU')
 else:
   inputFile = sys.stdin
 
@@ -71,4 +71,3 @@ if inputFile != sys.stdin:
   inputFile.close()
 if outputFile != sys.stdout:
   outputFile.close()
-<

@@ -29,7 +29,7 @@ outputCSV = csv.DictWriter(outputFile, ['Org', 'primaryEmail'], lineterminator='
 outputCSV.writeheader()
 
 if (len(sys.argv) > 1) and (sys.argv[1] != '-'):
-  inputFile = open(sys.argv[1], 'rb')
+  inputFile = open(sys.argv[1], 'rbU')
 else:
   inputFile = sys.stdin
 

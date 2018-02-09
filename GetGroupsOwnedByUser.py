@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 """
 # Purpose: Make a CSV file showing groups owned by users
 # Usage:

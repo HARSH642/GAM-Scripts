@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 """
 # Purpose: For a Google Drive User, delete all drive file ACLs except those indicating the user as owner
 # Note: This script requires advanced GAM: https://github.com/taers232c/GAMADV-X

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 """
 # Purpose: For a Google Drive User, get all drive file ACLs for files except those indicating the user as owner
 # 1: Use print filelist to get selected ACLs

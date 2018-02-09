@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 """
 # Purpose: Create a CSV file showing users that belong to a number of groups beyond a threshold
 # threshold not specified - output all users

@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 """
 # Purpose: Move root users to an Org Unit based on their work address countryCode
 # Note: This script requires advanced GAM: https://github.com/taers232c/GAMADV-X

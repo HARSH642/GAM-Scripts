@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 """
 # Purpose: Create a CSV file with columns: User, Alias; from EMC exported data with columns: DisplayName, PrimarySmtpAddress, EmailAddresses.
 # For each alias email address in the space separated list "EmailAddresses", output a row with PrimarySmtpAddress in the User column and the alias email address in the Alias column.

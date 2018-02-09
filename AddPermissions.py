@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 """
 # Purpose: Add <DriveFilePermissionList> to a list of files/folders
 # Note: This script requires advanced GAM: https://github.com/taers232c/GAMADV-X

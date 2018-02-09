@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 """
 # Purpose: For a Google Drive User(s), delete all duplicate drive files
 # Note: This script requires advanced GAM: https://github.com/taers232c/GAMADV-X

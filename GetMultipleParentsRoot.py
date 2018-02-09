@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 """
 # Purpose: For a Google Drive User, delete root as a parent of files that have root as a parent and other parents
 # Note: This uses advanced GAM: https://github.com/taers232c/GAMADV-X

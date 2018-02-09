@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 """
 # Purpose: For a CSV file, delete the duplcate rows based an a field. You can optionally delete unwanted fields.
 # Usage:

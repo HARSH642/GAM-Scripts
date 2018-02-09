@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2
 """
 # Purpose: For a Google Drive User, get all drive file ACLs for files shared with a list of specified domains
 # except those indicating the user as owner

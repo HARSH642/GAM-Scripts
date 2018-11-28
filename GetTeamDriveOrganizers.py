@@ -25,7 +25,7 @@ import sys
 QUOTE_CHAR = '"' # Adjust as needed
 LINE_TERMINATOR = '\n' # On Windows, you probably want '\r\n'
 
-ONE_ORGANIZER = False
+ONE_ORGANIZER = False # False - show all organizers, True - show one organizer
 
 PERMISSIONS_N_ROLE = re.compile(r"permissions.(\d+).role")
 

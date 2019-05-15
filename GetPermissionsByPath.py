@@ -7,7 +7,7 @@
 # Usage:
 # 1: Use print filelist to get selected ACLs
 #    Syntax: gam <UserTypeEntity> print filelist [anyowner|(showownedby any|me|others)]
-#		[query <QueryDriveFile>] [fullquery <QueryDriveFile>] [select <DriveFileEntity>|orphans] [depth <Number>] [showparent] [filepath|full]
+#		[query <QueryDriveFile>] [fullquery <QueryDriveFile>] [select <DriveFileEntity>|orphans] [depth <Number>] [showparent] [filepath|fullpath]
 #    For a full description of print filelist, see: https://github.com/taers232c/GAMADV-XTD/wiki/Users-Drive-Files
 #    Example: gam redirect csv ./filelistperms.csv user testuser@domain.com print filelist id title permissions fullpath
 # 2: From that list of ACLs, output a CSV file with headers "path,type,value,role"
@@ -59,7 +59,7 @@ for row in csv.DictReader(inputFile, quotechar=QUOTE_CHAR):
   if numPaths > 0:
     pathList = []
     for p in xrange(0, numPaths):
-      pathList.append(row['path.{0}'.format(p)])
+      pathList.append(row['paths.{0}'.format(p)])
   else:
     pathList = [row.get(FILE_NAME, row.get(ALT_FILE_NAME, 'Unknown'))]
   for k, v in row.iteritems():
